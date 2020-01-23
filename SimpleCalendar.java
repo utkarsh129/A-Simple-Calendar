@@ -96,35 +96,38 @@ class addremainder extends data
 		while (a==1)
 		{
 		
-		System.out.println("Enter Month and Date");
-		mth[i] = s.nextInt();
-		date[i] = s.nextInt();
-		if(mth[i]==1&&date[i]<32||mth[i]==2&&date[i]<29||mth[i]==3&&date[i]<32||mth[i]==4&&date[i]<31||mth[i]==5&&date[i]<32||mth[i]==6&&date[i]<31||mth[i]==7&&date[i]<32||mth[i]==8&&date[i]<32||mth[i]==9&&date[i]<31||mth[i]==10&&date[i]<31||mth[i]==11&&date[i]<31||mth[i]==12&&date[i]<32)
-		{
-		        System.out.println("Enter Remainder to be Added:");
-		        save[i] = s.nextLine();
-		        save[i]+=s.nextLine();
-		        System.out.println("Remainder has been Saved.");
-		}
-		else
-		        System.out.println("Invalid Input.");
-		System.out.println("Enter 1 for adding another Remainder");
-		System.out.println("Enter 2 for to exit");
-		op = s.nextInt();
-		switch (op)
-		{
-			case 1 : i++;
-			         a=0;
-			         adre();
-				 break;
-			case 2 : a=0;
-                		 break;
-                	default : System.out.println("Wrong Input");
-                	          a=0;
-	        }
-                }
-        }
-        static void seere (int mth)
+			System.out.println("Enter Month and Date");
+			mth[i] = s.nextInt();
+			date[i] = s.nextInt();
+			if(mth[i]==1&&date[i]<32||mth[i]==2&&date[i]<29||mth[i]==3&&date[i]<32||mth[i]==4&&date[i]<31||mth[i]==5&&date[i]<32||mth[i]==6&&date[i]<31||mth[i]==7&&date[i]<32||mth[i]==8&&date[i]<32||mth[i]==9&&date[i]<31||mth[i]==10&&date[i]<31||mth[i]==11&&date[i]<31||mth[i]==12&&date[i]<32)
+			{
+				System.out.println("Enter Remainder to be Added:");
+				save[i] = s.nextLine();
+				save[i]+=s.nextLine();
+				System.out.println("Remainder has been Saved.");
+			}
+			else
+			{
+				System.out.println("Invalid Input.");
+				System.out.println("Enter 1 for adding another Remainder");
+				System.out.println("Enter 2 for to exit");
+				op = s.nextInt();
+				switch (op)
+				{
+					case 1 : i++;
+						 a=0;
+						 adre();
+						 break;
+					case 2 : a=0;
+						 break;
+					default : System.out.println("Wrong Input");
+						  a=0;
+				}
+            	     }
+        	}
+	}
+SS}
+        static void seere (int mth)      //See saved remainders
         {
                 for (i=0;i<12;i++)
                 {
